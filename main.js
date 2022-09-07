@@ -29,10 +29,10 @@ function result() {
   let yItem = randomValueFromArray(insertY);
   let zItem = randomValueFromArray(insertZ);
   
-  newStory = newStory.replace(':insertx:', xItem);
+  newStory = newStory.replaceAll(':insertx:', xItem);
   newStory = newStory.replace(':inserty:', yItem);
   newStory = newStory.replace(':insertz:', zItem);
-  newStory = newStory.replace(':insertx:', xItem);
+  
   
 
   if(customName.value !== '') {
@@ -47,6 +47,15 @@ function result() {
     newStory = newStory.replace('94 fahrenheit', temperature);
     newStory = newStory.replace('300 pounds', weight);
     
+  }
+
+  if(document.getElementById("de").checked) {
+    const newName = 'Jeff';
+    const newPlace = 'Osterreich';
+    const newAction = 'trinken Wasser';
+    newStory = newStory.replaceAll([xItem], newName);
+    newStory = newStory.replace([yItem], newPlace);
+    newStory = newStory.replace([zItem], newAction);
   }
 
   story.textContent = newStory;
