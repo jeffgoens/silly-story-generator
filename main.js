@@ -29,10 +29,10 @@ function result() {
   let yItem = randomValueFromArray(insertY);
   let zItem = randomValueFromArray(insertZ);
   
-  newStory = newStory.replace(':insertx:', xItem);
-  newStory = newStory.replace(':inserty:', yItem);
-  newStory = newStory.replace(':insertz:', zItem);
-  newStory = newStory.replace(':insertx:', xItem);
+  let newStory = newStory.replace(':insertx:', xItem);
+  let newStory = newStory.replace(':inserty:', yItem);
+  let newStory = newStory.replace(':insertz:', zItem);
+  let newStory = newStory.replace(':insertx:', xItem);
   
 
   if(customName.value !== '') {
