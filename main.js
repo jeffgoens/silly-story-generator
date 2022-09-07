@@ -50,12 +50,12 @@ function result() {
   }
 
   if(document.getElementById("de").checked) {
-    const newName = 'Jeff';
-    const newPlace = 'Osterreich';
+    const newName = 'Weinerschnitzel';
+    const newPlace = 'Osterreich Strasse';
     const newAction = 'trinken Wasser';
-    newStory = newStory.replaceAll([xItem], newName);
-    newStory = newStory.replace([yItem], newPlace);
-    newStory = newStory.replace([zItem], newAction);
+    newStory = newStory.replaceAll(xItem, newName);
+    newStory = newStory.replace(yItem, newPlace);
+    // newStory = newStory.replace(zItem, newAction);
   }
 
   story.textContent = newStory;
