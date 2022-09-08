@@ -3,8 +3,18 @@
  }
  
  body {
-      font-family: helvetica, sans-serif;
-      width: 350px;
+    background-image: Laughing emoji transparent;    
+    font-family: helvetica, sans-serif;
+    }
+
+    .formBox {
+      border: 3px solid black;
+      border-radius: 1em;
+      background-color: white;
+      padding: 20px;
+      margin: 0 auto;
+      width: 400px;
+      box-shadow: 10px 15px 20px;
     }
 
     label {
@@ -23,6 +33,7 @@
     p {
       background: #FFC125;
       color: #5E2612;
-      padding: 10px;
+      padding: 1em;
+      border-radius: 10px;
       visibility: hidden;
     }
