@@ -23,8 +23,8 @@ let insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewalk'
 
 randomize.addEventListener('click', result);
 
-function changeBackgroundImage() {
-  document.getElementByClassName('formBox').style.backgroundImage = "url('germanflag.png')";
+// function changeBackgroundImage() {
+//   document.getElementByClassName('formBox').style.backgroundImage = "url('germanflag.png')";
 }
 
 function result() {
@@ -62,7 +62,7 @@ function result() {
     newStory = newStory.replaceAll(xItem, newName);
     newStory = newStory.replace(yItem, newPlace);
     // newStory = newStory.replace(zItem, newAction);
-    changeBackgroundImage();
+    // changeBackgroundImage();
   }
 
   
