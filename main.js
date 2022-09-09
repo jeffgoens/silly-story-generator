@@ -25,7 +25,7 @@ randomize.addEventListener('click', result);
 
 // function changeBackgroundImage() {
 //   document.getElementByClassName('formBox').style.backgroundImage = "url('germanflag.png')";
-}
+// }
 
 function result() {
   
@@ -61,8 +61,9 @@ function result() {
     const newAction = 'trinken Wasser';
     newStory = newStory.replaceAll(xItem, newName);
     newStory = newStory.replace(yItem, newPlace);
-    // newStory = newStory.replace(zItem, newAction);
+    newStory = newStory.replace(zItem, newAction);
     // changeBackgroundImage();
+    console.log(newStory);
   }
 
   
